@@ -3,10 +3,11 @@
 ## Preparations
 
 1. Install a recent ROS 2 either from source or as binary according to the [official instructions](https://github.com/ros2/ros2/wiki/Installation).
-1. Clone this repository and checkout master.
+1. Create a workspace directory structure, e.g. `my_workspace/src`.
+1. Clone this repository within the `src` directory of your workspace and checkout master.
 1. Source the environment of your ROS 2 installation, e.g. `. $PATH_TO_YOUR_ROS_INSTALLATION/setup.bash`, and build this repositories content.
    ```
-   cd $REPO_ROOT # directory that contains README.md
+   cd $WORKSPACE_ROOT # directory that contains the src directory (e.g. my_workspace)
    colcon build --merge-install --cmake-args " -DCMAKE_BUILD_TYPE=Debug"
    ```
 1. Source the local workshop environment and run the test program
